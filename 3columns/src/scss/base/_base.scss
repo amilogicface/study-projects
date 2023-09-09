@@ -1,0 +1,32 @@
+body, html {
+	box-sizing: border-box;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+h2 {
+	margin: 0;
+	font-family: $second-font;
+	font-weight: 700;
+	color: $headlines;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+p {
+	font-family: $main-font;
+	font-weight: 400;
+	color: $paragraphs;
+	margin: 50px 0;
+}

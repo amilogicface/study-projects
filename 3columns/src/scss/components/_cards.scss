@@ -1,0 +1,33 @@
+.card {
+	flex: 1 1 33.33%;
+	min-width: 375px;
+	padding: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	&_first {
+		background-color: $card-first;
+
+		.button {
+			color: $card-first;
+		}
+	}
+
+	&_second {
+		background-color: $card-second;
+
+		.button {
+			color: $card-second;
+		}
+	}
+
+	&_third {
+		background-color: $card-third;
+
+		.button {
+			color: $card-third;
+		}
+	}
+}

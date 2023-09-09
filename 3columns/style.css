@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body, html {
+	box-sizing: border-box;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+h2 {
+	margin: 0;
+	font-family: "Big Shoulders Display", verdana, sans-serif;
+	font-weight: 700;
+	color: hsl(0, 0%, 95%);
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+p {
+	font-family: "Lexend Deca", verdana, sans-serif;
+	font-weight: 400;
+	color: hsla(0, 0%, 100%, 0.75);
+	margin: 50px 0;
+}
+
+.base-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.card {
+	flex: 1 1 33.33%;
+	min-width: 375px;
+	padding: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.card_first {
+	background-color: #e28525;
+}
+.card_first .button {
+	color: #e28525;
+}
+.card_second {
+	background-color: #016972;
+}
+.card_second .button {
+	color: #016972;
+}
+.card_third {
+	background-color: #00403f;
+}
+.card_third .button {
+	color: #00403f;
+}
+
+.button {
+	border: none;
+	border-radius: 500px;
+	padding: 25px 45px;
+	font-family: "Lexend Deca", verdana, sans-serif;
+	font-weight: 400;
+	transition: background-color 0.5s;
+}
+.button:hover {
+	cursor: pointer;
+	background-color: hsla(0, 0%, 100%, 0.25);
+}
+
+.icon {
+	width: 64px;
+	height: 40px;
+}
+.icon_luxury {
+	background-image: url("/images/icon-luxury.svg");
+}
+.icon_suvs {
+	background-image: url("/images/icon-suvs.svg");
+}
+.icon_sedans {
+	background-image: url("/images/icon-sedans.svg");
+}

@@ -1,0 +1,15 @@
+.button {
+	border: none;
+	border-radius: 500px;
+	padding: 25px 45px;
+
+	font-family: $main-font;
+	font-weight: 400;
+
+	transition: background-color 0.5s;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $color-hovered;
+	}
+}
