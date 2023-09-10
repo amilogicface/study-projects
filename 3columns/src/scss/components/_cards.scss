@@ -1,11 +1,12 @@
 .card {
-	flex: 1 1 33.33%;
-	min-width: 375px;
-	padding: 55px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+
+	flex: 1 1 33.33%;
+	min-width: 375px;
+	padding: 55px;
 
 	&_first {
 		background-color: $card-first;
