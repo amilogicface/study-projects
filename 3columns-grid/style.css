@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
 body, html {
 	box-sizing: border-box;
 }
@@ -50,29 +51,37 @@ p {
 	min-width: 375px;
 	padding: 55px;
 }
+
 .card_first {
 	background-color: #e28525;
 }
+
 .card_first .button {
 	color: #e28525;
 }
+
 .card_second {
 	background-color: #016972;
 }
+
 .card_second .button {
 	color: #016972;
 }
+
 .card_third {
 	background-color: #00403f;
 }
+
 .card_third .button {
 	color: #00403f;
 }
+
 @media (max-width: 1125px) {
 	.card_third {
 		grid-column: span 2;
 	}
 }
+
 @media (max-width: 750px) {
 	.card_third {
 		grid-column: span 1;
@@ -87,6 +96,7 @@ p {
 	font-weight: 400;
 	transition: background-color 0.5s;
 }
+
 .button:hover {
 	cursor: pointer;
 	background-color: hsla(0, 0%, 100%, 0.25);
@@ -96,12 +106,15 @@ p {
 	width: 64px;
 	height: 40px;
 }
+
 .icon_luxury {
-	background-image: url("/images/icon-luxury.svg");
+	background-image: url("./images/icon-luxury.svg");
 }
+
 .icon_suvs {
-	background-image: url("/images/icon-suvs.svg");
+	background-image: url("./images/icon-suvs.svg");
 }
+
 .icon_sedans {
-	background-image: url("/images/icon-sedans.svg");
+	background-image: url("./images/icon-sedans.svg");
 }
