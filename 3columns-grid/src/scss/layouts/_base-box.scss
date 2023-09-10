@@ -1,0 +1,8 @@
+.base-box {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+	grid-auto-rows: 1fr;
+	max-width: 1200px;
+	overflow: hidden;
+	border-radius: 20px;
+}

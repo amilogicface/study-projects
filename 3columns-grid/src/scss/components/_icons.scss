@@ -1,0 +1,16 @@
+.icon {
+	width: 64px;
+	height: 40px;
+
+	&_luxury {
+		background-image: url("/images/icon-luxury.svg");
+	}
+
+	&_suvs {
+		background-image: url("/images/icon-suvs.svg");
+	}
+
+	&_sedans {
+		background-image: url("/images/icon-sedans.svg");
+	}
+}
