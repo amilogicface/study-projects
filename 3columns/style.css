@@ -8,11 +8,10 @@ body, html {
 }
 
 body {
-	display: flex;
 	min-height: 100vh;
-	align-content: center;
-	align-items: center;
+	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 h2 {
@@ -42,13 +41,13 @@ p {
 }
 
 .card {
-	flex: 1 1 33.33%;
-	min-width: 375px;
-	padding: 55px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+	flex: 1 1 33.33%;
+	min-width: 375px;
+	padding: 55px;
 }
 .card_first {
 	background-color: #e28525;
@@ -87,11 +86,11 @@ p {
 	height: 40px;
 }
 .icon_luxury {
-	background-image: url("/images/icon-luxury.svg");
+	background-image: url("./images/icon-luxury.svg");
 }
 .icon_suvs {
-	background-image: url("/images/icon-suvs.svg");
+	background-image: url("./images/icon-suvs.svg");
 }
 .icon_sedans {
-	background-image: url("/images/icon-sedans.svg");
+	background-image: url("./images/icon-sedans.svg");
 }
