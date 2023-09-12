@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 .clearfix::before, .clearfix::after {
 	display: table;
 	content: " ";
@@ -391,6 +392,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #f3eae3;
 }
 
 a {
@@ -403,16 +405,82 @@ a:hover {
 	color: red;
 }
 
+.product-card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+	max-height: 450px;
+	max-width: 600px;
+	border-radius: 10px;
+}
+.product-card > div {
+	flex: 1 0 50%;
+	min-width: 300px;
+}
+.product-card__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px;
+	background-color: white;
+}
+.product-card__product-price {
+	font-family: Fraunces, Helvetica, Verdana, Arial, sans-serif;
+	font-weight: initial;
+}
+.product-card__last-price {
+	font-size: 32px;
+	color: #40866c;
+	font-weight: 700;
+}
+.product-card__old-price {
+	font-family: Montserrat, Helvetica, Verdana, Arial, sans-serif;
+	color: #5e6167;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+.product-card__product-type, .product-card__product-information {
+	font-family: Montserrat, Helvetica, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	color: #5e6167;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.product-card__product-type {
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+.product-card__name {
+	font-family: Fraunces, Helvetica, Verdana, Arial, sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+}
+
 .icon {
-	display: block;
-	width: 24px;
-	height: 24px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
 	transition: all 0.3s;
 	cursor: pointer;
+}
+.icon_bascet {
+	background-image: url("./src/img/icons/bascet.svg");
+	background-position: center;
+	background-size: cover;
+	vertical-align: middle;
 }
 
 .button {
 	display: inline-block;
+	padding: 15px 60px;
+	border: 0;
+	border-radius: 7px;
+	background-color: #40866c;
 	transition: all 0.3s;
 	cursor: pointer;
 }

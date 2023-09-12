@@ -1,0 +1,51 @@
+.product-card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+	max-height: 450px;
+	max-width: 600px;
+
+	border-radius: 10px;
+
+	> div {
+		flex: 1 0 50%;
+		min-width: 300px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 30px;
+		background-color: $color-main-white;
+	}
+
+	&__product-price {
+		@include font-source(2);
+	}
+
+	&__last-price {
+		@include font-source($weight: 700, $color: $color-attention, $size: 32px)
+	}
+
+	&__old-price {
+		@include font-source(1, $weight: 400, $color: $color-main-text);
+		text-decoration: line-through;
+	}
+}
+
+.product-card__product-type, .product-card__product-information {
+	@include font-source(1, $weight: 400, $color: $color-main-text, $size: 14px, $lh: 1.5);
+	margin: 0;
+}
+
+.product-card__product-type {
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+.product-card__name {
+	@include font-source(2, $weight: 700, $size: 32px);
+}
