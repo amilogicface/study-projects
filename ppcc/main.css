@@ -408,57 +408,92 @@ a:hover {
 .product-card {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	position: relative;
 	overflow: hidden;
-	max-height: 450px;
 	max-width: 600px;
 	border-radius: 10px;
 }
-.product-card > div {
+@media (max-width: 600px) {
+	.product-card {
+		flex-direction: column;
+		max-width: 350px;
+	}
+}
+.product-card__product-img {
+	display: block;
 	flex: 1 0 50%;
-	min-width: 300px;
+	background: center/cover no-repeat url("./src/img/backgrounds/image-product-desktop.jpg");
+}
+@media (max-width: 600px) {
+	.product-card__product-img {
+		background: center/cover no-repeat url("./src/img/backgrounds/image-product-mobile.jpg");
+		min-height: 240px;
+	}
 }
 .product-card__content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex: 1 0 50%;
 	padding: 30px;
 	background-color: white;
+}
+.product-card__content > * {
+	margin-bottom: 25px;
+}
+@media (max-width: 600px) {
+	.product-card__content > * {
+		margin-bottom: 15px;
+	}
+}
+.product-card__content > *:last-child {
+	margin: 0;
+}
+.product-card__content .button {
+	font-family: Montserrat, Helvetica, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	color: white;
+	font-weight: 700;
+}
+.product-card__product-type {
+	font-family: Montserrat, Helvetica, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	color: #5e6167;
+	font-weight: 400;
+	line-height: 1.5;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+.product-card__product-information {
+	font-family: Montserrat, Helvetica, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	color: #5e6167;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.product-card__name {
+	font-family: Fraunces, Helvetica, Verdana, Arial, sans-serif;
+	font-size: 32px;
+	font-weight: 700;
 }
 .product-card__product-price {
 	font-family: Fraunces, Helvetica, Verdana, Arial, sans-serif;
 	font-weight: initial;
 }
 .product-card__last-price {
+	font-family: inherit;
 	font-size: 32px;
 	color: #40866c;
 	font-weight: 700;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
 }
 .product-card__old-price {
 	font-family: Montserrat, Helvetica, Verdana, Arial, sans-serif;
+	font-size: 13px;
 	color: #5e6167;
 	font-weight: 400;
+	display: inline-block;
 	text-decoration: line-through;
-}
-
-.product-card__product-type, .product-card__product-information {
-	font-family: Montserrat, Helvetica, Verdana, Arial, sans-serif;
-	font-size: 14px;
-	color: #5e6167;
-	font-weight: 400;
-	line-height: 1.5;
-	margin: 0;
-}
-
-.product-card__product-type {
-	text-transform: uppercase;
-	letter-spacing: 0.3em;
-}
-
-.product-card__name {
-	font-family: Fraunces, Helvetica, Verdana, Arial, sans-serif;
-	font-size: 32px;
-	font-weight: 700;
 }
 
 .icon {
