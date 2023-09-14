@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
+	<link rel="stylesheet" href="main.css">
+	<title>Lesson : Single Price Grid Component</title>
 </head>
+
 <body>
-  Join our community
 
-  30-day, hassle-free money back guarantee
+	<article class="company-card">
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+		<div class="company-card__header">
+			<h1 class="company-card__headline">Join our community</h1>
+			<p class="company-card__text company-card__text_attention">30-day, hassle-free money back guarantee</p>
+			<p class="company-card__text">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their
+				skills.</p>
+		</div>
 
-  Monthly Subscription
+		<div class="subscription">
+			<h2 class="subscription__headline">Monthly Subscription</h2>
+			<div class="subscription__price-block">
+				<span class="subscription__price">&dollar;29</span>
+				<p class="subscription__time-of-pay">per month</p>
+			</div>
+			<p class="subscription__offer">Full access for less than &dollar;1 a day</p>
+			<button class="button">Sign Up</button>
+		</div>
 
-  &dollar;29 per month
+		<div class="company-card__about">
+			<span class="company-card__about-headline">Why Us</span>
+			<ul class="company-card__advantages-list">
+				<li class="company-card__advantages-item">Tutorials by industry experts</li>
+				<li class="company-card__advantages-item">Peer &amp; expert code review</li>
+				<li class="company-card__advantages-item">Coding exercises</li>
+				<li class="company-card__advantages-item">Access to our GitHub repos</li>
+				<li class="company-card__advantages-item">Community forum</li>
+				<li class="company-card__advantages-item">Flashcard decks</li>
+				<li class="company-card__advantages-item">New videos every week</li>
+			</ul>
+		</div>
 
-  Full access for less than &dollar;1 a day
+	</article>
 
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
+
 </html>

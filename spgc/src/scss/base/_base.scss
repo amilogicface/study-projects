@@ -1,3 +1,7 @@
+html {
+	@include font-source(1, 16px);
+}
+
 body {
 	height: 100vh;
 	display: flex;

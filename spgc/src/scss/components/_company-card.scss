@@ -1,0 +1,43 @@
+.company-card {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	max-width: 635px;
+
+	overflow: hidden;
+	border-radius: 10px;
+
+	box-shadow: 0 0 35px 5px $color-shadow;
+
+	> div {
+		padding: 45px;
+	}
+}
+
+.company-card__header {
+	grid-column: span 2;
+}
+
+.company-card__headline {
+	@include font-source($weight: 700, $color: $brand-color);
+	margin-bottom: 25px;
+}
+
+.company-card__text {
+	@include font-source($color: $color-main-text, $lh: 1.5);
+	margin-bottom: 0;
+
+	&_attention {
+		@include font-source(1, $weight: 700, $color: $color-attention);
+		margin-bottom: 15px;
+		letter-spacing: 1px;
+	}
+}
+
+.subscription {
+	background-color: $brand-color;
+}
+
+.company-card__about {
+	background-color: $brand-color-bright;
+}
