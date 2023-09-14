@@ -1,0 +1,18 @@
+.button {
+	display: inline-block;
+
+	transition: all 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		color: $color-main-white;
+		background-color: $color-main-black;
+	}
+
+	&:disabled {
+		color: $color-main-black;
+		background-color: $color-main-black;
+
+		cursor: default;
+	}
+}
