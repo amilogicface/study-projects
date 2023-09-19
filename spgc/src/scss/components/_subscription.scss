@@ -1,0 +1,40 @@
+.subscription {
+	display: flex;
+	flex-direction: column;
+	padding: 2.8em;
+
+	color: $color-main-white;
+	background-color: $brand-color;
+}
+
+.subscription__headline {
+	@include font-source(0, 1.6rem, 700);
+	margin-bottom: 1.5em;
+}
+
+.subscription__price-block {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	margin-bottom: 1.8em;
+}
+
+.subscription__price-container {
+	display: flex;
+	align-items: center;
+}
+
+.subscription__price {
+	@include font-source(1, 2.8rem, 700);
+}
+
+.subscription__period-of-pay {
+	margin: 0;
+	padding-left: 0.9em;
+	color: $color-main-white-transparent;
+}
+
+.subscription__price-offer {
+	@include font-source(0, 1.4rem);
+	margin: 0;
+}

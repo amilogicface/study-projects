@@ -1,9 +1,10 @@
-header, nav, section, article, aside, footer {
+header, nav, section, article, aside, footer, main {
 	display: block
 }
 
 html {
 	box-sizing: border-box;
+	font-size: 0.625em;
 }
 
 *, *::after, *::before {

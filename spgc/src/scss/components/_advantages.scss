@@ -1,0 +1,14 @@
+.company-advantages {
+	padding: 2.8em;
+	color: $color-main-white;
+	background-color: $brand-color-bright;
+}
+
+.company-advantages__headline {
+	@include font-source(0, 1.6rem, 700);
+	padding-bottom: 1.5rem;
+}
+
+.company-advantages__list {
+	@include font-source(0, 1.4rem, $lh: 1.4em, $color: $color-main-white-transparent);
+}

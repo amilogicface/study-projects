@@ -11,7 +11,8 @@
 	display: $disp;
 }
 
-@mixin font-source($family: false, $size: false, $lh: false, $weight: initial, $color: false) {
+@mixin font-source($family: false, $size: false, $weight: initial, $color: false, $lh: false) {
+	@if $family ==0 {}
 
 	@if $family ==1 {
 		font-family: $main-font, Helvetica, Verdana, Arial, sans-serif;

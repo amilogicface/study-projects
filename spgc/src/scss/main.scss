@@ -2,15 +2,16 @@
 @import './abstracts/placeholders';
 
 
-@import './base/normalize';
-@import './base/my-normalize';
+@import './vendors/normalize';
+@import './vendors/my-normalize';
+
+
 @import './base/colors';
 @import './base/typography';
 @import './base/base';
 
 @import './components/company-card';
 @import './components/subscription';
-
-
+@import './components/advantages';
 @import './components/icons';
 @import './components/buttons'
