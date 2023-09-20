@@ -1,0 +1,53 @@
+@mixin push--auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}
+
+@mixin pseudo($disp: block, $pos: absolute, $cont: '') {
+	content: $cont;
+	position: $pos;
+	display: $disp;
+}
+
+@mixin font-source($size: false, $lh: false, $weight: initial, $color: false) {
+
+	@if $size {
+		font-size: $size;
+	}
+
+	@if $color {
+		color: $color;
+	}
+
+	@if $weight {
+		font-weight: $weight;
+	}
+
+	@if $lh {
+		line-height: $lh;
+	}
+}
+
+@mixin placeholder {
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&.placeholder {
+		@content;
+	}
+}

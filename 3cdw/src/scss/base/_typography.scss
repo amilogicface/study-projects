@@ -1,0 +1,11 @@
+$main-font: Verdana;
+$second-font: Verdana;
+
+%main-font {
+	font-family: $main-font, Helvetica, Verdana, Arial, sans-serif;
+}
+
+%second-font {
+	font-family: $second-font, Helvetica, Verdana, Arial, sans-serif;
+
+}
