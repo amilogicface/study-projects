@@ -1,18 +1,50 @@
 body {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  position: relative;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 
-	cursor: pointer;
-	transition: all 0.3s;
+  cursor: pointer;
+  transition: all 0.3s;
 
-	&:hover {
-		color: red;
-	}
+  &:hover {
+    color: red;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+
+  grid-gap: 1%;
+  width: 100%;
+
+  background-color: gray;
+  justify-content: center;
+  align-content: center;
+
+  & div > div, & table td {
+
+    &:first-child {
+      background-color: aquamarine;
+    }
+
+    &:last-child {
+      background-color: aqua;
+    }
+
+    &.center {
+      background-color: antiquewhite;
+    }
+  }
+
+
 }

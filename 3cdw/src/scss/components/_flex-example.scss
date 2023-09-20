@@ -1,0 +1,12 @@
+.flex-example {
+  display: flex;
+  height: 100%;
+
+  > div {
+    flex-basis: 15%;
+  }
+
+  & .center {
+    flex: 1 0 15%;
+  }
+}

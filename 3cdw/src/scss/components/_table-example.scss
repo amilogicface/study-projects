@@ -1,0 +1,11 @@
+.table-example {
+  border-spacing: 0;
+
+  & td:first-child, td:last-child {
+    width: 15%;
+  }
+
+  & .center {
+    width: 70%;
+  }
+}

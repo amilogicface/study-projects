@@ -1,0 +1,16 @@
+.inline-example {
+  font-size: 0;
+
+  > div {
+    display: inline-block;
+    height: 100%;
+  }
+
+  & div:first-child, div:last-child {
+    width: 15%;
+  }
+
+  & .center {
+    width: 70%;
+  }
+}

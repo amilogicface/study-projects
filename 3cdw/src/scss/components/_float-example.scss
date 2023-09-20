@@ -1,0 +1,16 @@
+.float-example {
+  position: relative;
+
+  > div {
+    float: left;
+    height: 100%
+  }
+
+  & div:first-child, div:last-child {
+    width: 15%;
+  }
+
+  & .center {
+    width: 70%;
+  }
+}

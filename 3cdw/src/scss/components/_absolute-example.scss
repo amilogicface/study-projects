@@ -1,0 +1,24 @@
+.absolute-example {
+  position: relative;
+
+  > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  & div:first-child {
+    left: 0;
+    right: 70%;
+  }
+
+  & .center {
+    left: 15%;
+    right: 15%;
+  }
+
+  & div:last-child {
+    right: 0;
+    left: 85%;
+  }
+}
