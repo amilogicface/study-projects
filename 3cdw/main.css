@@ -406,6 +406,7 @@ a:hover {
   background-color: gray;
   justify-content: center;
   align-content: center;
+  text-align: center;
 }
 .wrapper div > div:first-child, .wrapper table td:first-child {
   background-color: aquamarine;
@@ -471,6 +472,9 @@ a:hover {
 .inline-example > div {
   display: inline-block;
   height: 100%;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: initial;
 }
 .inline-example div:first-child, .inline-example div:last-child {
   width: 15%;

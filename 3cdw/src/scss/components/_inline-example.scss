@@ -4,6 +4,8 @@
   > div {
     display: inline-block;
     height: 100%;
+    vertical-align: top;
+    @include font-source(16px)
   }
 
   & div:first-child, div:last-child {
