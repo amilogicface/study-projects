@@ -2,34 +2,99 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="main.css">
-	<title>My project starter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Singolo*</title>
 </head>
 
 <body>
-	<header class="main-header">
-		<div class="wrapper">
-			<nav class="main-navigation">
-				<ul class="navigation-list">
-					<li class="navigation-list__item"><a href="#" class="navigation-list__link">Ссылка</a></li>
-					<li class="navigation-list__item"><a href="#" class="navigation-list__link">Ссылка</a></li>
-					<li class="navigation-list__item"><a href="#" class="navigation-list__link">Ссылка</a></li>
-					<li class="navigation-list__item"><a href="#" class="navigation-list__link">Ссылка</a></li>
-					<li class="navigation-list__item"><a href="#" class="navigation-list__link">Ссылка</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<main class="main-main">
-		<div class="wrapper">
-		</div>
-	</main>
-	<footer class="main-footer">
-		<div class="wrapper">
-		</div>
-	</footer>
+
+  <header class="header">
+    <div class="wrapper">
+      <h1 class="logo">Singolo<span class="logo__star">*</span></h1>
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list__item"><a href="#" class="navigation-list__link">Home</a></li>
+          <li class="navigation-list__item"><a href="#" class="navigation-list__link">Services</a></li>
+          <li class="navigation-list__item"><a href="#" class="navigation-list__link">Portfolio</a></li>
+          <li class="navigation-list__item"><a href="#" class="navigation-list__link">About</a></li>
+          <li class="navigation-list__item"><a href="#" class="navigation-list__link">Contant</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="hero">
+    <div class="wrapper">
+      <div class="carousel">
+        <img src="./src/img/carousel/slider-content-1.png" alt="Img of carousel">
+        <div class="carousel__control-block">
+          <button class="carousel__control-button-left">Назад</button>
+          <button class="carousel__control-button-right">Вперед</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main class="main">
+
+    <section class="main-content-block our-services">
+      <div class="wrapper">
+        <h2 class="main-content-block__headline">Our Services</h2>
+        <p class="main-content-block">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
+          odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <ul class="services__list">
+          <li class="services__item">
+            <img src="" alt="services img">
+            <div class="services__about-block">
+              <h3 class="services__headline">Custom Design</h3>
+              <p class="servivces__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="main-content-block our-portfolio">
+      <div class="wrapper">
+        <h2 class="main-content-block__headline">Our Services</h2>
+        <p class="main-content-block__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <div class="tags-block">
+          <span class="tag">All</span>
+          <span class="tag">Web Design</span>
+          <span class="tag">Graphic Design</span>
+          <span class="tag">Artwork</span>
+        </div>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <img class="portfolio__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="wrapper">
+      <p class="footer__copyrights">© Copyright 2013</p>
+      <ul class="social-list">
+        <li class="socila-list__item"><span class="icon_facebook"></span></li>
+        <li class="socila-list__item"><span class="icon_google"></span></li>
+        <li class="socila-list__item"><span class="icon_twitter"></span></li>
+        <li class="socila-list__item"><span class="icon_linkedin"></span></li>
+      </ul>
+    </div>
+
+  </footer>
+
 </body>
 
 </html>

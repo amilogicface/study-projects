@@ -12,5 +12,13 @@
 @import './base/base';
 
 
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/our-services';
+@import './layouts/our-portfolio';
+@import './layouts/footer';
+
+
+@import './components/carousel';
 @import './components/icons';
 @import './components/buttons'
