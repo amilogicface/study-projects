@@ -9,6 +9,7 @@
   content: $cont;
   position: $pos;
   display: $disp;
+  @content;
 }
 
 @mixin media-source($type: false) {
@@ -37,7 +38,7 @@
   }
 }
 
-@mixin font-source($size: false, $lh: false, $weight: initial, $color: false) {
+@mixin font-source($size: false, $weight: initial, $color: false, $lh: false) {
 
   @if $size {
     font-size: $size;

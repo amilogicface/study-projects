@@ -1,0 +1,29 @@
+.navigation-list__item {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+
+  &::before {
+    @include pseudo($cont: ".") {
+      @include font-source(24px, 700, $color-main-white);
+      left: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  &:first-child::before {
+    display: none
+  }
+
+}
+
+.navigation-list__link {
+  @include font-source(12px, 700, $color-main-white);
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+
+.navigation-list__link_active {
+  color: $color-brand;
+}

@@ -1,0 +1,20 @@
+.main-content-block__wrapper {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.main-content-block__headline {
+  @include font-source(30px, 700, $color-main-h);
+}
+
+.main-content-block__text {
+  @include font-source(18px, normal, $color-main-text, 30px);
+}
+
+.main-content-block__services-list {
+  margin-top: 55px;
+}
+
+.main-content-block__portfolio-list {
+  margin-top: 25px;
+}

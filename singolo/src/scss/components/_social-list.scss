@@ -1,0 +1,10 @@
+.social-list {}
+
+.social-list__item {
+  display: inline-block;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

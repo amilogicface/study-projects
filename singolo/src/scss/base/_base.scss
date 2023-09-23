@@ -14,12 +14,18 @@ a {
   cursor: pointer;
   transition: all 0.3s;
 
-  &:hover {
-    color: red;
+  &:hover, &:focus {
+    color: $color-brand;
   }
 }
 
 .wrapper {
   margin: auto;
   max-width: $media-laptop;
+
+  overflow: hidden;
+  position: relative;
+
+  padding-left: 40px;
+  padding-right: 40px;
 }

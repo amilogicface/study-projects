@@ -1,3 +1,36 @@
 .header {
   background-color: $color-dark-bg;
 }
+
+.header__wrapper {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+
+.logo {
+  @extend %main-font;
+  @include font-source(25px, 700, $color-main-white);
+  letter-spacing: -0.75px;
+
+  transition: color 0.3s linear;
+
+  &__star {
+    color: $color-brand;
+    vertical-align: top;
+    transition: color 0.3s linear;
+  }
+}
+
+.logo-link:hover .logo, .logo-link:focus .logo {
+  color: $color-brand;
+}
+
+.logo-link:hover .logo__star, .logo-link:focus .logo__star {
+  color: $color-main-white;
+}

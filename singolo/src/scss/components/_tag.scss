@@ -1,0 +1,28 @@
+.tag {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid $color-main-h;
+  margin-right: 10px;
+
+  background-color: transparent;
+
+  @include font-source(12px, 400, $color-main-text, 12px);
+
+  cursor: pointer;
+
+  transition: color 0.2s linear;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover, &:focus {
+    color: $color-main-white;
+  }
+
+  &_active {
+    border-color: $color-white-bg;
+    color: $color-white-bg;
+  }
+}

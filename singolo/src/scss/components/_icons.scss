@@ -1,9 +1,17 @@
 .icon {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 33px;
+  height: 32px;
 
   transition: all 0.3s;
 
   cursor: pointer;
+
+  &_twitter {
+    background-image: url(./src/img/icons/ico-twitter.svg);
+  }
+
+  &:hover, &:focus {
+    opacity: 0.5;
+  }
 }

@@ -11,11 +11,13 @@
 <body>
 
   <header class="header">
-    <div class="wrapper">
-      <h1 class="logo">Singolo<span class="logo__star">*</span></h1>
+    <div class="wrapper header__wrapper">
+      <a href="#" class="logo-link">
+        <h1 class="logo">Singolo<span class="logo__star">*</span></h1>
+      </a>
       <nav class="main-navigation">
         <ul class="navigation-list">
-          <li class="navigation-list__item"><a href="#" class="navigation-list__link">Home</a></li>
+          <li class="navigation-list__item"><a href="#" class="navigation-list__link navigation-list__link_active">Home</a></li>
           <li class="navigation-list__item"><a href="#" class="navigation-list__link">Services</a></li>
           <li class="navigation-list__item"><a href="#" class="navigation-list__link">Portfolio</a></li>
           <li class="navigation-list__item"><a href="#" class="navigation-list__link">About</a></li>
@@ -31,8 +33,8 @@
       <div class="carousel">
         <img src="./src/img/carousel/slider-content-1.png" alt="Img of carousel">
         <div class="carousel__control-block">
-          <button class="carousel__control-button-left">Назад</button>
-          <button class="carousel__control-button-right">Вперед</button>
+          <button class="carousel__control-button carousel__control-button_left"></button>
+          <button class="carousel__control-button carousel__control-button_right"></button>
         </div>
       </div>
     </div>
@@ -42,37 +44,96 @@
   <main class="main">
 
     <section class="main-content-block our-services">
-      <div class="wrapper">
+      <div class="wrapper main-content-block__wrapper">
         <h2 class="main-content-block__headline">Our Services</h2>
-        <p class="main-content-block">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
+        <p class="main-content-block__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia
           odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <ul class="services__list">
-          <li class="services__item">
-            <img src="" alt="services img">
-            <div class="services__about-block">
-              <h3 class="services__headline">Custom Design</h3>
-              <p class="servivces__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+
+        <ul class="services-list main-content-block__services-list">
+          <li class="services-list__item">
+            <span class="services-list__icon"></span>
+            <div class="services-list__about-block">
+              <h3 class="services-list__headline">Custom Design</h3>
+              <p class="services-list__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <span class="services-list__icon"></span>
+            <div class="services-list__about-block">
+              <h3 class="services-list__headline">Custom Design</h3>
+              <p class="services-list__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <span class="services-list__icon"></span>
+            <div class="services-list__about-block">
+              <h3 class="services-list__headline">Custom Design</h3>
+              <p class="services-list__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <span class="services-list__icon"></span>
+            <div class="services-list__about-block">
+              <h3 class="services-list__headline">Custom Design</h3>
+              <p class="services-list__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <span class="services-list__icon"></span>
+            <div class="services-list__about-block">
+              <h3 class="services-list__headline">Custom Design</h3>
+              <p class="services-list__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+            </div>
+          </li>
+          <li class="services-list__item">
+            <span class="services-list__icon"></span>
+            <div class="services-list__about-block">
+              <h3 class="services-list__headline">Custom Design</h3>
+              <p class="services-list__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
             </div>
           </li>
         </ul>
+
       </div>
     </section>
 
 
     <section class="main-content-block our-portfolio">
-      <div class="wrapper">
+      <div class="wrapper main-content-block__wrapper">
         <h2 class="main-content-block__headline">Our Services</h2>
         <p class="main-content-block__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
           lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="tags-block">
-          <span class="tag">All</span>
-          <span class="tag">Web Design</span>
-          <span class="tag">Graphic Design</span>
-          <span class="tag">Artwork</span>
+          <button class="tag tag_active">All</button>
+          <button class="tag">Web Design</button>
+          <button class="tag">Graphic Design</button>
+          <button class="tag">Artwork</button>
         </div>
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <img class="portfolio__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+        <ul class="portfolio-list main-content-block__portfolio-list">
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__img" src="./src/img/portfolio/portfolio-1.jpg" alt="services img">
           </li>
         </ul>
       </div>
@@ -83,13 +144,13 @@
 
   <footer class="footer">
 
-    <div class="wrapper">
+    <div class="wrapper footer_wrapper">
       <p class="footer__copyrights">© Copyright 2013</p>
       <ul class="social-list">
-        <li class="socila-list__item"><span class="icon_facebook"></span></li>
-        <li class="socila-list__item"><span class="icon_google"></span></li>
-        <li class="socila-list__item"><span class="icon_twitter"></span></li>
-        <li class="socila-list__item"><span class="icon_linkedin"></span></li>
+        <li class="social-list__item"><a href="#" class="icon icon_twitter"></a></li>
+        <li class="social-list__item"><a href="#" class="icon icon_twitter"></a></li>
+        <li class="social-list__item"><a href="#" class="icon icon_twitter"></a></li>
+        <li class="social-list__item"><a href="#" class="icon icon_twitter"></a></li>
       </ul>
     </div>
 

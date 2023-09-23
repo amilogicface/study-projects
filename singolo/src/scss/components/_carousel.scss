@@ -1,1 +1,44 @@
-.carousel {}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  padding: 40px 0;
+}
+
+.carousel__control-block {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 13px);
+}
+
+.carousel__control-button {
+  position: absolute;
+  width: 16px;
+  height: 27px;
+  padding: 20px;
+
+  border: none;
+  background-color: transparent;
+
+  background: url("./src/img/icons/carousel-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  transition: transform 0.2s ease-in;
+
+  &:hover, &:focus {
+    transform: scale(2);
+  }
+}
+
+.carousel__control-button_right {
+  transform: rotate(180deg);
+  right: 0;
+
+  &:hover, &:focus {
+    transform: scale(2) rotate(180deg);
+  }
+}

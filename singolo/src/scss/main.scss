@@ -14,11 +14,17 @@
 
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/main-content-block';
 @import './layouts/our-services';
 @import './layouts/our-portfolio';
 @import './layouts/footer';
 
 
+@import './components/navigation-list';
 @import './components/carousel';
+@import './components/services-list';
+@import './components/tag';
+@import './components/portfolio-list';
+@import './components/social-list';
 @import './components/icons';
 @import './components/buttons'

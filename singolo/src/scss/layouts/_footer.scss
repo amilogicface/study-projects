@@ -1,4 +1,19 @@
 .footer {
+  border-top: 7px solid #323746;
   background-color: $color-dark-bg;
   color: $color-main-text;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+}
+
+.footer__copyrights {
+  @include font-source(13px, 700, $color-main-text, 18px);
 }
