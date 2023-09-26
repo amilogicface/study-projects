@@ -7,8 +7,20 @@
 
   cursor: pointer;
 
+  &_facebook {
+    background-image: url(./src/img/icons/ico-facebook.svg);
+  }
+
+  &_google {
+    background-image: url(./src/img/icons/ico-google-plus.svg);
+  }
+
   &_twitter {
     background-image: url(./src/img/icons/ico-twitter.svg);
+  }
+
+  &_linkedin {
+    background-image: url(./src/img/icons/ico-linkedin.svg);
   }
 
   &:hover, &:focus {

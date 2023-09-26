@@ -13,8 +13,12 @@
 
   transition: color 0.2s linear;
 
-  &:last-of-type {
+  &:last-child {
     margin-right: 0;
+
+    @media (width <=401px) {
+      margin-top: 10px;
+    }
   }
 
   &:hover, &:focus {

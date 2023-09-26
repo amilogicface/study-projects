@@ -1,24 +1,40 @@
 .header {
   background-color: $color-dark-bg;
+  position: relative;
 }
 
 .header__wrapper {
   display: flex;
-
-  justify-content: space-between;
   align-items: baseline;
+
+  overflow: visible;
+
+  min-height: 85px;
 
   padding-top: 25px;
   padding-bottom: 30px;
+
+  @media (width <=635px) {
+    align-items: center;
+
+  }
 }
 
+.header__burger {
+  margin-right: 30px;
+}
 
 .logo {
-  @extend %main-font;
   @include font-source(25px, 700, $color-main-white);
   letter-spacing: -0.75px;
 
   transition: color 0.3s linear;
+
+  @media (width <=635px) {
+    position: relative;
+    z-index: 3;
+
+  }
 
   &__star {
     color: $color-brand;

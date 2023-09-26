@@ -3,14 +3,12 @@
   justify-content: space-between;
 
   flex-wrap: wrap;
-
-  & > * {
-    flex: 1 1 33.33%;
-    min-width: 300px;
-  }
 }
 
 .services-list__item {
+  flex: 1 1 33.33%;
+  min-width: 300px;
+
   margin-bottom: 20px;
 
   @media (width >=980px) {
@@ -36,7 +34,30 @@
   width: 60px;
   height: 60px;
   float: left;
-  background-image: url('./src/img/icons/services-item-1.svg');
+
+  &_1 {
+    background: url(./src/img/icons/services-item-1.svg);
+  }
+
+  &_2 {
+    background: url(./src/img/icons/services-item-2.svg);
+  }
+
+  &_3 {
+    background: url(./src/img/icons/services-item-3.svg);
+  }
+
+  &_4 {
+    background: url(./src/img/icons/services-item-4.svg);
+  }
+
+  &_5 {
+    background: url(./src/img/icons/services-item-5.svg);
+  }
+
+  &_6 {
+    background: url(./src/img/icons/services-item-6.svg);
+  }
 }
 
 .services-list__about-block {

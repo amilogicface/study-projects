@@ -1,6 +1,7 @@
 .navigation-list__item {
   display: inline-block;
   position: relative;
+
   padding: 0 10px;
 
   &::before {
@@ -16,12 +17,27 @@
     display: none
   }
 
+  @media (width <=645px) {
+    display: block;
+    padding: 15px 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
 }
 
 .navigation-list__link {
   @include font-source(12px, 700, $color-main-white);
   text-transform: uppercase;
   padding: 10px 10px;
+
+  @media (width <=645px) {
+    @include font-source(24px, 700);
+    letter-spacing: -0.84px;
+
+  }
 }
 
 .navigation-list__link_active {

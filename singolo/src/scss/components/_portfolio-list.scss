@@ -1,9 +1,10 @@
 .portfolio-list {
-  margin-left: -10px;
-  margin-right: -10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .portfolio-list__item {
@@ -50,5 +51,5 @@
 }
 
 .portfolio-list__img {
-  border-radius: 10px;
+  border-radius: 3px;
 }

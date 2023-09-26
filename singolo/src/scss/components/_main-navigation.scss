@@ -1,0 +1,40 @@
+.main-navigation {
+  margin-left: auto;
+
+  @media (width <=645px) {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 70px;
+
+    min-width: 280px;
+    height: 100vh;
+
+    z-index: 2;
+
+    background-color: $color-dark-bg;
+
+    transform: translateX(-100%);
+
+  }
+
+  &_burger-visible {
+    transform: none;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.40);
+
+    &::before {
+      @include pseudo;
+      z-index: 1;
+      top: 0;
+      left: 100%;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba($color: #000000, $alpha: .4);
+    }
+  }
+}
