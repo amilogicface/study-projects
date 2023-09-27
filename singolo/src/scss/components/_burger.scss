@@ -8,14 +8,16 @@
 
   display: none;
 
+  cursor: pointer;
+
   &::before {
     @include pseudo($pos: static);
-    @extend .burger__line
+    @extend .burger__line;
   }
 
   &::after {
     @include pseudo($pos: static);
-    @extend .burger__line
+    @extend .burger__line;
   }
 
   @media (width <=645px) {
@@ -23,6 +25,24 @@
     z-index: 3;
     display: flex;
   }
+
+  &_active {
+    .burger__line {
+      opacity: 0;
+    }
+
+    &::before {
+      transform: scaleX(1.5) rotate(45deg);
+      transform-origin: top left;
+    }
+
+    &::after {
+      transform: scaleX(1.5) rotate(-45deg);
+      transform-origin: bottom left;
+    }
+  }
+
+
 }
 
 .burger__line {
@@ -34,4 +54,6 @@
   border-radius: 5px;
 
   background-color: $color-main-white;
+
+  transition: all 0.3s linear;
 }

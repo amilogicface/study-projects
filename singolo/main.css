@@ -538,6 +538,7 @@ a:hover, a:focus {
     z-index: 2;
     background-color: #2D303A;
     transform: translateX(-100%);
+    transition: transform 0.2s ease-out;
   }
 }
 .main-navigation_burger-visible {
@@ -844,6 +845,7 @@ a:hover, a:focus {
   flex-direction: column;
   justify-content: space-between;
   display: none;
+  cursor: pointer;
 }
 .burger::before {
   content: "";
@@ -862,6 +864,17 @@ a:hover, a:focus {
     display: flex;
   }
 }
+.burger_active .burger__line, .burger_active .burger::before, .burger_active .burger::after {
+  opacity: 0;
+}
+.burger_active::before {
+  transform: scaleX(1.5) rotate(45deg);
+  transform-origin: top left;
+}
+.burger_active::after {
+  transform: scaleX(1.5) rotate(-45deg);
+  transform-origin: bottom left;
+}
 
 .burger__line, .burger::before, .burger::after {
   display: block;
@@ -869,4 +882,5 @@ a:hover, a:focus {
   height: 3px;
   border-radius: 5px;
   background-color: white;
+  transition: all 0.3s linear;
 }/*# sourceMappingURL=main.css.map */
