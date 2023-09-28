@@ -32,7 +32,13 @@
   <div class="hero">
     <div class="wrapper">
       <div class="carousel">
-        <img src="./src/img/carousel/slider-content-1.png" alt="Img of carousel">
+        <div class="carousel__screen">
+          <ul class="carousel__cart">
+            <li class="carousel__item"><img class="carousel__img" src="./src/img/carousel/slider-content-1.png" alt="Img of carousel"></li>
+            <li class="carousel__item"><img class="carousel__img" src="./src/img/carousel/slider-content-2.png" alt="Img of carousel"></li>
+            <li class="carousel__item"><img class="carousel__img" src="./src/img/carousel/slider-content-1.png" alt="Img of carousel"></li>
+          </ul>
+        </div>
         <div class="carousel__control-block">
           <button class="carousel__control-button carousel__control-button_left"></button>
           <button class="carousel__control-button carousel__control-button_right"></button>
@@ -168,7 +174,8 @@
     </div>
 
   </footer>
-
+  <script src="./src/js/burger.js"></script>
+  <script src="./src/js/carousel.js"></script>
 </body>
 
 </html>

@@ -606,11 +606,26 @@ a:hover, a:focus {
 }
 
 .carousel {
+  position: relative;
+}
+
+.carousel__screen {
+  overflow: hidden;
+}
+
+.carousel__cart {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  transition: transform 0.3s linear;
+}
+
+.carousel__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 40px 0;
+  min-width: 100%;
+  padding: 40px 11%;
 }
 
 .carousel__control-block {
@@ -630,7 +645,7 @@ a:hover, a:focus {
   transition: transform 0.2s ease-in;
   cursor: pointer;
 }
-.carousel__control-button:hover, .carousel__control-button:focus {
+.carousel__control-button:hover {
   transform: scale(2);
 }
 
@@ -638,7 +653,7 @@ a:hover, a:focus {
   transform: rotate(180deg);
   right: 0;
 }
-.carousel__control-button_right:hover, .carousel__control-button_right:focus {
+.carousel__control-button_right:hover {
   transform: scale(2) rotate(180deg);
 }
 
@@ -846,6 +861,7 @@ a:hover, a:focus {
   justify-content: space-between;
   display: none;
   cursor: pointer;
+  transition: transform 0.1s linear;
 }
 .burger::before {
   content: "";
@@ -864,16 +880,8 @@ a:hover, a:focus {
     display: flex;
   }
 }
-.burger_active .burger__line, .burger_active .burger::before, .burger_active .burger::after {
-  opacity: 0;
-}
-.burger_active::before {
-  transform: scaleX(1.5) rotate(45deg);
-  transform-origin: top left;
-}
-.burger_active::after {
-  transform: scaleX(1.5) rotate(-45deg);
-  transform-origin: bottom left;
+.burger_active {
+  transform: rotate(90deg);
 }
 
 .burger__line, .burger::before, .burger::after {
@@ -882,5 +890,4 @@ a:hover, a:focus {
   height: 3px;
   border-radius: 5px;
   background-color: white;
-  transition: all 0.3s linear;
 }/*# sourceMappingURL=main.css.map */

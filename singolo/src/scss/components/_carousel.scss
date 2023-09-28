@@ -1,10 +1,27 @@
 .carousel {
+  position: relative;
+}
+
+.carousel__screen {
+  overflow: hidden;
+}
+
+.carousel__cart {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
+  transition: transform 0.3s linear;
+}
+
+.carousel__item {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  position: relative;
-  padding: 40px 0;
+  min-width: 100%;
+
+  padding: 40px 11%;
 }
 
 .carousel__control-block {
@@ -29,7 +46,7 @@
   transition: transform 0.2s ease-in;
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover {
     transform: scale(2);
   }
 }
@@ -38,7 +55,7 @@
   transform: rotate(180deg);
   right: 0;
 
-  &:hover, &:focus {
+  &:hover {
     transform: scale(2) rotate(180deg);
   }
 }
