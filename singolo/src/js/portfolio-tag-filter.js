@@ -1,3 +1,4 @@
+let tagsBlock = document.querySelector('.tags-block')
 let tags = document.querySelectorAll('.tag')
 let portfolioBlock = document.querySelector('.portfolio-list')
 let portfolioItems = document.querySelectorAll('.portfolio-list__item')
@@ -44,26 +45,11 @@ function portfolioListChanger(lists, tag) {
   }
 }
 
-tags[0].addEventListener('click', function (e) {
-  tagsClassChanger(tags, this)
+tagsBlock.addEventListener('click', e => {
+  if (e.target.classList.contains('tag')) {
+    let clickedTag = e.target
+    tagsClassChanger(tags, clickedTag)
 
-  portfolioListChanger(portfolioItems, this)
-})
-
-tags[1].addEventListener('click', function (e) {
-  tagsClassChanger(tags, this)
-
-  portfolioListChanger(portfolioItems, this)
-})
-
-tags[2].addEventListener('click', function (e) {
-  tagsClassChanger(tags, this)
-
-  portfolioListChanger(portfolioItems, this)
-})
-
-tags[3].addEventListener('click', function (e) {
-  tagsClassChanger(tags, this)
-
-  portfolioListChanger(portfolioItems, this)
+    portfolioListChanger(portfolioItems, clickedTag)
+  }
 })
