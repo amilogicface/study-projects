@@ -3,7 +3,7 @@
 
   @media (width <=645px) {
     position: absolute;
-    left: 0;
+    right: 100%;
     top: 0;
 
     display: flex;
@@ -19,14 +19,12 @@
 
     background-color: $color-dark-bg;
 
-    transform: translateX(-100%);
-
     transition: transform 0.2s ease-out;
 
   }
 
   &_burger-visible {
-    transform: none;
+    transform: translateX(100%);
     box-shadow: 10px 0 20px rgba(0, 0, 0, 0.40);
 
     &::before {

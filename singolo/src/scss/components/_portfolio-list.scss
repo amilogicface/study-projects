@@ -9,6 +9,8 @@
 
 .portfolio-list__item {
 
+  transition: opacity 0.3s linear;
+
   @media (width >375px) {
     flex: 0 1 33.3%;
     padding: 2%;
