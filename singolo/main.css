@@ -413,7 +413,10 @@ a:hover, a:focus {
 
 .header {
   background-color: #2D303A;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
 }
 
 .header__wrapper {
@@ -464,6 +467,7 @@ a:hover, a:focus {
 .hero {
   background-color: #F06C64;
   border-bottom: 6px solid #EA676B;
+  margin-top: 85px;
 }
 
 .main-content-block__wrapper {
@@ -766,7 +770,7 @@ a:hover, a:focus {
 }
 
 .portfolio-list__item {
-  transition: opacity 0.3s linear;
+  transition: opacity 1s linear;
 }
 @media (width > 375px) {
   .portfolio-list__item {
