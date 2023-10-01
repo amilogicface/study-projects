@@ -2,7 +2,7 @@ let tagsBlock = document.querySelector('.tags-block')
 let tags = document.querySelectorAll('.tag')
 let portfolioBlock = document.querySelector('.portfolio-list')
 let portfolioItems = [...document.querySelectorAll('.portfolio-list__item')]
-const animationTime = getComputedStyle(portfolioItems[0]).transition.slice(8, 9) * 1000
+let animationTime = getComputedStyle(portfolioItems[0]).transition.slice(8, 9) * 1000
 
 function portfolioShuffle(arr) {
   arr.sort(() => (Math.floor(Math.random() * 2) == 0 ? -1 : 1))
